@@ -7,6 +7,11 @@ public class TimetableBuilder{
     int year; 
     public static void main(String[] args)
     {
-        //do nothing
+        //read file 
+        //extract year and sem 
+        //extract courses 
+        //create a 2D timetable like array 
+        //fill array with course number 
+        //attempt to randomly find a free hour
     }
 }

@@ -8,4 +8,10 @@ public class Hour {
         }
         this.period = period; 
     }
+
+    public void printHour()
+    {
+        String dayString = day.toString();
+        System.out.println("Day: " + dayString + "Hour: " + period);
+    }
 }
