@@ -71,6 +71,7 @@ public class TimetableBuilder {
         }
 
         Hour freeHour = timetableBuilder.returnFreeHour();
+        System.out.println("Your free hour is: ");
         freeHour.printHour();
 
     }
@@ -141,14 +142,12 @@ public class TimetableBuilder {
         int randomDay = -1, randomPeriod = -1; 
         do{
         //use a randomizer to select a day and period
-        
-        //randomDay = ?; 
-        //randomPeriod = ?; 
+        randomDay = getRandomDay(); 
+        randomPeriod = getRandomPeriod(); 
         
         //check if that hour is free
-
         //if yes, return that hour 
-        //otherwise, run the randomizer again 
+        //otherwise, run the loop again 
         
         }while(!timetable[randomDay][randomPeriod]); 
 
@@ -169,12 +168,24 @@ public class TimetableBuilder {
     }
 
     public static int getRandomDay(){
-        //int randomDay = Min + (int)(Math.random() * ((Max - Min) + 1));
-        return 0; 
+        int min = 0; 
+        int max = 0; 
+        //the function below gives a random number in the range [min, max]
+        //change the values of min and max above accordingly 
+        //hint: check array size in returnFreeHour()
+
+        int randomDay = min + (int)(Math.random() * ((max - min) + 1));
+        return randomDay; 
     }
 
     public static int getRandomPeriod(){
-        //int randomPeriod = Min + (int)(Math.random() * ((Max - Min) + 1));
-        return 0; 
+        int min = 0; 
+        int max = 0; 
+        //the function below gives a random number in the range [min, max]
+        //change the values of min and max above accordingly 
+        //hint: check array size in returnFreeHour()
+
+        int randomPeriod = min + (int)(Math.random() * ((max - min) + 1));
+        return randomPeriod; 
     }
 }
