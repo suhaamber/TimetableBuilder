@@ -18,6 +18,10 @@ public class Course {
         this.courseName = courseName;
     }
 
+    public void setCourseInstructor(String courseInstructor) {
+        this.courseInstructor = courseInstructor;
+    }
+
     public void setNumberOfLectures(int lecture, int lab, int tutorial) {
         this.lecture = lecture;
         this.lab = lab; 
