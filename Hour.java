@@ -3,7 +3,9 @@ public class Hour {
     int period; 
 
     Hour(char[] day, int period){
-        this.day = day; 
+        for (int i = 0; i < 2; i++) {
+            this.day[i] = day[i];
+        }
         this.period = period; 
     }
 }
