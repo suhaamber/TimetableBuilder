@@ -11,14 +11,12 @@ public class Hour {
 
     Hour()
     {
-        String temp = "  ";
-        this.day = temp.toCharArray(); 
-        period = 0; 
+        //do nothing
     }
 
     public void printHour()
     {
-        String dayString = day.toString();
-        System.out.println("Day: " + dayString + "Hour: " + period);
+        //String dayString = day.toString();
+        System.out.println("Day: " + day[0] + day[1] + " Hour: " + period);
     }
 }
