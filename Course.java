@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Course {
+    String courseNumber; 
     String courseName; 
     String courseInstructor; 
     int lecture, lab, tutorial; //number of lectures, labs and tutorials 
