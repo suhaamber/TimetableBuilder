@@ -9,6 +9,13 @@ public class Hour {
         this.period = period; 
     }
 
+    Hour()
+    {
+        String temp = "  ";
+        this.day = temp.toCharArray(); 
+        period = 0; 
+    }
+
     public void printHour()
     {
         String dayString = day.toString();
