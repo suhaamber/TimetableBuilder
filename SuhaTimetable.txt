@@ -1,0 +1,21 @@
+2 2021
+#
+CS F321
+Design and Analysis of Algorithms 
+Dr Razia Sulthana
+3 0 1
+Su 1
+Mo 6
+We 6
+Mo 4
+#
+CS F322
+Computer Networks
+Dr Raja M
+3 2 1
+Mo 1
+Tu 5
+We 7
+Su 8
+Su 9
+Mo 7
