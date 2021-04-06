@@ -60,6 +60,8 @@ public class TimetableBuilder {
                         Hour tempHour = new Hour(lectures[0].toCharArray(), Integer.parseInt(lectures[1]));
                         tempCourse.addTutorialHour(tempHour); 
                     }
+                    timetableBuilder.addCourse(tempCourse);
+
                 } else {
                     String[] splitString = line.trim().split("\\s+");
                     timetableBuilder.setSemester(Integer.parseInt(splitString[0]));
@@ -71,9 +73,6 @@ public class TimetableBuilder {
             e.printStackTrace();
         }
 
-        // create a 2D timetable like array
-        // fill array with course number
-        // attempt to randomly find a free hour
     }
 
     public void setYear(int year) {
@@ -83,4 +82,10 @@ public class TimetableBuilder {
     public void setSemester(int semester) {
         this.semester = semester;
     }
+
+    public void addCourse(Course course)
+    {
+        courses.add(course);
+    }
+
 }
