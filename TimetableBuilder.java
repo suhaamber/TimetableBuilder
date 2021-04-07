@@ -94,6 +94,9 @@ public class TimetableBuilder {
         int tempDay, tempPeriod; 
         //create a 2D array that represents a timetable
         boolean[][] timetable = new boolean[5][9]; 
+        for(int i = 0; i < 5; i++)
+            for(int j = 0; j < 9; j++)
+                timetable[i][j] = false; 
         
         for (Course course : this.courses) {
             for (Hour hour : course.lectureHours) {
@@ -163,6 +166,7 @@ public class TimetableBuilder {
             case 4: tempHour.day = "Th".toCharArray();
                     break; 
         }
+        //range - 0 to 8
         tempHour.period = randomPeriod + 1; 
         return tempHour; 
     }
